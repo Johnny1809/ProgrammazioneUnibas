@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Inserisci il numero di componenti"
-            android:inputType="numberDecimal" />
+            android:inputType="number" />
 
         <Switch
             android:id="@+id/switchMinori"
@@ -67,6 +67,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Calcola ISEE" />
+
+        <ListView
+            android:id="@+id/listaModuli"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 </ScrollView>

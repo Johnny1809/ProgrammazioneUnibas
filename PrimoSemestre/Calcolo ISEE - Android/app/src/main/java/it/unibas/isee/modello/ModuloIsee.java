@@ -6,10 +6,10 @@ public class ModuloIsee {
 
     private double reddito;
     private double patrimonio;
-    private double numeroComponenti;
+    private int numeroComponenti;
     private boolean presenzaMinori;
 
-    public ModuloIsee(double reddito, double patrimonio, double numeroComponenti, boolean presenzaMinori) {
+    public ModuloIsee(double reddito, double patrimonio, int numeroComponenti, boolean presenzaMinori) {
         this.reddito = reddito;
         this.patrimonio = patrimonio;
         this.numeroComponenti = numeroComponenti;
@@ -32,11 +32,11 @@ public class ModuloIsee {
         this.patrimonio = patrimonio;
     }
 
-    public double getNumeroComponenti() {
+    public int getNumeroComponenti() {
         return numeroComponenti;
     }
 
-    public void setNumeroComponenti(double numeroComponenti) {
+    public void setNumeroComponenti(int numeroComponenti) {
         this.numeroComponenti = numeroComponenti;
     }
 

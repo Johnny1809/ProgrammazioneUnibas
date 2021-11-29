@@ -1005,6 +1005,8 @@ id bottom
 id bottoneCalcola
 id buttonPanel
 id campoComponenti
+id campoIsee
+id campoMinori
 id campoPatrimonio
 id campoReddito
 id center
@@ -1061,6 +1063,7 @@ id line1
 id line3
 id listMode
 id list_item
+id listaModuli
 id masked
 id message
 id middle
@@ -1233,6 +1236,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout riga_storia
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

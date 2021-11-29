@@ -6,12 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Switch;
 
 import androidx.fragment.app.Fragment;
 
 import it.unibas.isee.Applicazione;
+import it.unibas.isee.Costanti;
 import it.unibas.isee.R;
+import it.unibas.isee.modello.ModuloIsee;
+import it.unibas.isee.modello.StoriaCalcoli;
 
 public class VistaPrincipale extends Fragment {
 
@@ -20,6 +24,9 @@ public class VistaPrincipale extends Fragment {
     private EditText campoNumeroComponenti;
     private Switch switchMinori;
     private Button bottoneCalcola;
+    private ListView listaModuli;
+
+    private static final String TAG = VistaPrincipale.class.getSimpleName();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -30,7 +37,15 @@ public class VistaPrincipale extends Fragment {
         this.campoNumeroComponenti = vista.findViewById(R.id.campoComponenti);
         this.switchMinori = vista.findViewById(R.id.switchMinori);
         this.bottoneCalcola = vista.findViewById(R.id.bottoneCalcola);
+        this.listaModuli = vista.findViewById(R.id.listaModuli);
+
+        StoriaCalcoli storiaCalcoli = (StoriaCalcoli) Applicazione.getInstance().getModelloPersistente().getPersistentBean(Costanti.STORIA_CALCOLI, StoriaCalcoli.class);
+        listaModuli.setAdapter(new AdapterStoriaCalcoli(storiaCalcoli.getStoria()));
+        aggiornaListaModuli();
+
         this.bottoneCalcola.setOnClickListener(Applicazione.getInstance().getControlloPrincipale().getAzioneCalcola());
+        this.listaModuli.setOnItemClickListener(Applicazione.getInstance().getControlloPrincipale().getAzioneSelezioneStoria());
+
         return vista;
     }
 
@@ -61,4 +76,17 @@ public class VistaPrincipale extends Fragment {
     public void setErroreNumeroComponenti(String messaggio) {
         this.campoNumeroComponenti.setError(messaggio);
     }
+
+    public void aggiornaListaModuli() {
+        AdapterStoriaCalcoli adapter = (AdapterStoriaCalcoli) listaModuli.getAdapter();
+        adapter.aggiornaContenuto();
+    }
+
+    public void setCampiPrecompilati(ModuloIsee moduloIsee) {
+        this.campoReddito.setText(moduloIsee.getReddito() + "");
+        this.campoPatrimonio.setText(moduloIsee.getPatrimonio() + "");
+        this.campoNumeroComponenti.setText(moduloIsee.getNumeroComponenti() + "");
+        this.switchMinori.setChecked(moduloIsee.isPresenzaMinori());
+    }
+
 }

@@ -2,18 +2,38 @@ package it.unibas.isee.controllo;
 
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 
 import it.unibas.isee.Applicazione;
+import it.unibas.isee.Costanti;
 import it.unibas.isee.activity.ActivityPrincipale;
 import it.unibas.isee.modello.ModuloIsee;
+import it.unibas.isee.modello.StoriaCalcoli;
 import it.unibas.isee.vista.VistaPrincipale;
 
 public class ControlloPrincipale {
 
     private View.OnClickListener azioneCalcola = new AzioneCalcola();
+    private AdapterView.OnItemClickListener azioneSelezioneStoria = new AzioneSelezioneStoria();
+
+    public AdapterView.OnItemClickListener getAzioneSelezioneStoria() {
+        return azioneSelezioneStoria;
+    }
 
     public View.OnClickListener getAzioneCalcola (){
         return this.azioneCalcola;
+    }
+
+    private  class AzioneSelezioneStoria implements AdapterView.OnItemClickListener {
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            StoriaCalcoli storiaCalcoli = (StoriaCalcoli) Applicazione.getInstance().getModelloPersistente().getPersistentBean(Costanti.STORIA_CALCOLI, StoriaCalcoli.class);
+            ModuloIsee moduloIseeSelezionato = storiaCalcoli.getStoria().get(position);
+            ActivityPrincipale activityPrincipale = (ActivityPrincipale) Applicazione.getInstance().getCurrentActivity();
+            VistaPrincipale vistaPrincipale = activityPrincipale.getVistaPrincipale();
+            vistaPrincipale.setCampiPrecompilati(moduloIseeSelezionato);
+        }
     }
 
     private class AzioneCalcola implements View.OnClickListener {
@@ -37,9 +57,12 @@ public class ControlloPrincipale {
             double patrimonio = Double.parseDouble(campoPatrimonio);
             int numeroComponenti = Integer.parseInt(campoNumeroComponenti);
             ModuloIsee moduloIsee = new ModuloIsee(reddito, patrimonio, numeroComponenti, presenzaMinori);
+            StoriaCalcoli storiaCalcoli = (StoriaCalcoli) Applicazione.getInstance().getModelloPersistente().getPersistentBean(Costanti.STORIA_CALCOLI, StoriaCalcoli.class);
+            storiaCalcoli.aggiungiCalcolo(moduloIsee);
             String messaggio = "L'isee è di " + moduloIsee.getStringaValoreISEE();
             Log.d(TAG,messaggio);
             activityPrincipale.stampaMessaggio(messaggio);
+            vistaPrincipale.aggiornaListaModuli();
         }
 
         private boolean convalida(String campoReddito, String campoPatrimonio, String campoNumeroComponenti, boolean presenzaMinori, VistaPrincipale vistaPrincipale) {
