@@ -17,4 +17,44 @@ public class Pacco {
         this.mittente = mittente;
         this.destinatario = destinatario;
     }
+
+    public Calendar getDataInvio() {
+        return dataInvio;
+    }
+
+    public void setDataInvio(Calendar dataInvio) {
+        this.dataInvio = dataInvio;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public boolean isUrgente() {
+        return urgente;
+    }
+
+    public void setUrgente(boolean urgente) {
+        this.urgente = urgente;
+    }
+
+    public Utente getMittente() {
+        return mittente;
+    }
+
+    public void setMittente(Utente mittente) {
+        this.mittente = mittente;
+    }
+
+    public Utente getDestinatario() {
+        return destinatario;
+    }
+
+    public void setDestinatario(Utente destinatario) {
+        this.destinatario = destinatario;
+    }
 }

@@ -9,6 +9,7 @@ import java.util.List;
 
 import it.unibas.corrieri.Applicazione;
 import it.unibas.corrieri.Costanti;
+import it.unibas.corrieri.R;
 import it.unibas.corrieri.activity.ActivityPrincipale;
 import it.unibas.corrieri.modello.Corriere;
 import it.unibas.corrieri.vista.VistaPrincipale;
@@ -45,10 +46,21 @@ public class ControlloPrincipale {
             ActivityPrincipale activityPrincipale = (ActivityPrincipale) Applicazione.getInstance().getCurrentActivity();
             VistaPrincipale vistaPrincipale = activityPrincipale.getVistaPrincipale();
             String zona = vistaPrincipale.getCampoZona();
-            //TODO: convalida
+            boolean errori = convalida(vistaPrincipale, zona);
+            if(errori) {
+                return;
+            }
             List<Corriere> corrieri = Applicazione.getInstance().getDaoServer().findCorriereByZona(zona);
             Applicazione.getInstance().getModello().putBean(Costanti.CORRIERI, corrieri);
             vistaPrincipale.aggiornaDati();
+        }
+
+        private boolean convalida(VistaPrincipale vistaPrincipale, String zona) {
+            boolean errori = false;
+            if (zona.trim().isEmpty()) {
+                vistaPrincipale.setErroreCampoZona("Prima inserisci una zona");
+            }
+            return errori;
         }
     }
 }

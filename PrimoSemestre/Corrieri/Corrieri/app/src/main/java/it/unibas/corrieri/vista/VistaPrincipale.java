@@ -40,7 +40,10 @@ public class VistaPrincipale extends Fragment {
     public void aggiornaDati() {
         List<Corriere> corrieri = (List<Corriere>) Applicazione.getInstance().getModello().getBean(Costanti.CORRIERI);
         AdapterCorrieri adapterCorrieri = new AdapterCorrieri(corrieri);
-        //AdapterCorrieri adapterCorrieri = (AdapterCorrieri) listaCorrieri.getAdapter();
         this.listaCorrieri.setAdapter(adapterCorrieri);
+    }
+
+    public void setErroreCampoZona(String messaggio) {
+        this.campoZona.setError(messaggio);
     }
 }

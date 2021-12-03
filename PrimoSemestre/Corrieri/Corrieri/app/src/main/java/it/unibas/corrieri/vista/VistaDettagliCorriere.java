@@ -42,7 +42,7 @@ public class VistaDettagliCorriere extends Fragment {
     private void aggiornaDati() {
         Corriere corriere = (Corriere) Applicazione.getInstance().getModello().getBean(Costanti.CORRIERE_SELEZIONATO);
         this.labelNome.setText(corriere.getNome());
-        //TODO: aggiungere AdapterPacchi
+        this.listaPacchi.setAdapter(new AdapterPacchi(corriere.getListaPacchi()));
     }
 
 
