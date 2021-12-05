@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_nuovo_pacco.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\vista_nuovo_pacco.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_nuovo_pacco.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\activity_nuovo_pacco.xml"
+    },
+    {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },

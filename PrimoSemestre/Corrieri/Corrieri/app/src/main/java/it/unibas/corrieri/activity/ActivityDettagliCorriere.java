@@ -1,9 +1,11 @@
 package it.unibas.corrieri.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import it.unibas.corrieri.Applicazione;
 import it.unibas.corrieri.R;
 import it.unibas.corrieri.vista.VistaDettagliCorriere;
 import it.unibas.corrieri.vista.VistaPrincipale;
@@ -20,6 +22,11 @@ public class ActivityDettagliCorriere extends AppCompatActivity {
 
     public VistaDettagliCorriere getVistaDettagliCorriere() {
         return (VistaDettagliCorriere) getSupportFragmentManager().findFragmentById(R.id.vistaDettagliCorriere);
+    }
+
+    public void mostraActivityNuovoPacco() {
+        Intent intent = new Intent(this, ActivityNuovoPacco.class);
+        startActivity(intent);
     }
 
 }

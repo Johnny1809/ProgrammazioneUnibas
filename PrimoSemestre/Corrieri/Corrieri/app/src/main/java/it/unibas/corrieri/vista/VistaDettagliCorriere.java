@@ -30,6 +30,7 @@ public class VistaDettagliCorriere extends Fragment {
         this.labelNome = vista.findViewById(R.id.labelNome);
         this.listaPacchi = vista.findViewById(R.id.listaPacchi);
         this.bottoneNuovoPacco = vista.findViewById(R.id.bottoneNuovoPacco);
+        this.bottoneNuovoPacco.setOnClickListener(Applicazione.getInstance().getControlloDettagliCorriere().getAzioneNuovoPacco());
         return vista;
     }
 
@@ -44,10 +45,5 @@ public class VistaDettagliCorriere extends Fragment {
         this.labelNome.setText(corriere.getNome());
         this.listaPacchi.setAdapter(new AdapterPacchi(corriere.getListaPacchi()));
     }
-
-
-
-
-
 
 }

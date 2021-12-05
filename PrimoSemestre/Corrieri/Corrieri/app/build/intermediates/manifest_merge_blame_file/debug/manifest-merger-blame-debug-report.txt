@@ -11,7 +11,7 @@
 9-->C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Corrieri\Corrieri\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Corrieri\Corrieri\app\src\main\AndroidManifest.xml:5:5-21:19
+11-->C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Corrieri\Corrieri\app\src\main\AndroidManifest.xml:5:5-22:19
 12        android:name="it.unibas.corrieri.Applicazione"
 12-->C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Corrieri\Corrieri\app\src\main\AndroidManifest.xml:6:9-55
 13        android:allowBackup="true"
@@ -46,6 +46,9 @@
 29        <activity android:name="it.unibas.corrieri.activity.ActivityDettagliCorriere" />
 29-->C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Corrieri\Corrieri\app\src\main\AndroidManifest.xml:19:9-70
 29-->C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Corrieri\Corrieri\app\src\main\AndroidManifest.xml:19:19-68
-30    </application>
-31
-32</manifest>
+30        <activity android:name="it.unibas.corrieri.activity.ActivityNuovoPacco" />
+30-->C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Corrieri\Corrieri\app\src\main\AndroidManifest.xml:20:9-64
+30-->C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Corrieri\Corrieri\app\src\main\AndroidManifest.xml:20:19-62
+31    </application>
+32
+33</manifest>

@@ -27,6 +27,7 @@
             </intent-filter>
         </activity>
         <activity android:name="it.unibas.corrieri.activity.ActivityDettagliCorriere" />
+        <activity android:name="it.unibas.corrieri.activity.ActivityNuovoPacco" />
     </application>
 
 </manifest>

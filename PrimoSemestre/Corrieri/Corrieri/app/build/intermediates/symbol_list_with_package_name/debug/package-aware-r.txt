@@ -1021,6 +1021,7 @@ id clip_vertical
 id collapseActionView
 id container
 id containerVistaDettagliCorriere
+id containerVistaNuovoPacco
 id containerVistaPrincipale
 id content
 id contentPanel
@@ -1168,6 +1169,7 @@ id useLogo
 id view_offset_helper
 id visible
 id vistaDettagliCorriere
+id vistaNuovoPacco
 id vistaPrincipale
 id withText
 id wrap_content
@@ -1219,6 +1221,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_dettagli_corriere
+layout activity_nuovo_pacco
 layout activity_principale
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1249,6 +1252,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout vista_dettaglio_corriere
+layout vista_nuovo_pacco
 layout vista_principale
 mipmap ic_launcher
 string abc_action_bar_home_description

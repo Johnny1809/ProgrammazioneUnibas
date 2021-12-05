@@ -1,0 +1,17 @@
+<!-- L'id sarà formato dalla parola container + il nome della vista che verrà ospitata   -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerVistaNuovoPacco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Con l'attributo name sto segnalando il nome del fragment, ovvero il nome della
+     classe contenuta dall'activity. Siccome serve anche un id per il fragment
+     è logico dargli come id il nome della classe stessa-->
+    <fragment
+        android:name="it.unibas.corrieri.vista.VistaNuovoPacco"
+        android:id="@+id/vistaNuovoPacco"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

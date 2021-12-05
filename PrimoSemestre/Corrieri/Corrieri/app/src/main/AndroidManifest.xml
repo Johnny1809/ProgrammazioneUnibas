@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.ActivityDettagliCorriere"/>
+        <activity android:name=".activity.ActivityNuovoPacco"/>
 
     </application>
 
