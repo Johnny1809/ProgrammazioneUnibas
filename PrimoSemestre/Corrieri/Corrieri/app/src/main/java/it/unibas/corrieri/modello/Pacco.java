@@ -1,6 +1,7 @@
 package it.unibas.corrieri.modello;
 
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class Pacco {
 

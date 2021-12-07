@@ -1,6 +1,7 @@
 package it.unibas.corrieri.modello;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Utente {
@@ -56,5 +57,16 @@ public class Utente {
 
     public void setPacchiInviati(List<Pacco> pacchiInviati) {
         this.pacchiInviati = pacchiInviati;
+    }
+
+    public Pacco cercaPaccoInviato(Utente mittente, Calendar dataInvio) {
+        Calendar data15gPrima = (Calendar) dataInvio.clone();
+        data15gPrima.add(Calendar.DAY_OF_MONTH, -15);
+        for (Pacco pacco : pacchiInviati) {
+            if (pacco.getDestinatario().getCodice().trim().equalsIgnoreCase(mittente.getCodice()) && pacco.getDataInvio().after(data15gPrima)) {
+                return pacco;
+            }
+        }
+        return null;
     }
 }

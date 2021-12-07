@@ -48,6 +48,10 @@ public class Corriere {
         this.zona = zona;
     }
 
+    public void aggiungiPacco (Pacco p) {
+        listaPacchi.add(p);
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Corriere{");

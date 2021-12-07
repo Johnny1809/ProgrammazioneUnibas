@@ -5,6 +5,7 @@ import android.view.View;
 
 import it.unibas.corrieri.Applicazione;
 import it.unibas.corrieri.activity.ActivityDettagliCorriere;
+import it.unibas.corrieri.vista.VistaDettagliCorriere;
 
 public class ControlloDettagliCorriere {
 
