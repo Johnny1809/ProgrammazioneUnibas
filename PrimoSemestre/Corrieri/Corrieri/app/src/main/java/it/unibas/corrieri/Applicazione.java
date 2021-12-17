@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import it.unibas.corrieri.controllo.ControlloDettagliCorriere;
+import it.unibas.corrieri.controllo.ControlloNuovoPacco;
 import it.unibas.corrieri.controllo.ControlloPrincipale;
 import it.unibas.corrieri.modello.Modello;
 import it.unibas.corrieri.modello.ModelloPersistente;
@@ -38,6 +39,7 @@ public class Applicazione extends Application {
     private IDAOServer daoServer = new DAOServerMock();
     private ControlloPrincipale controlloPrincipale = new ControlloPrincipale();
     private ControlloDettagliCorriere controlloDettagliCorriere = new ControlloDettagliCorriere();
+    private ControlloNuovoPacco controlloNuovoPacco = new ControlloNuovoPacco();
 
 
     public Activity getCurrentActivity() {
@@ -62,6 +64,10 @@ public class Applicazione extends Application {
 
     public ControlloDettagliCorriere getControlloDettagliCorriere() {
         return controlloDettagliCorriere;
+    }
+
+    public ControlloNuovoPacco getControlloNuovoPacco() {
+        return controlloNuovoPacco;
     }
 
     //////////////////////////////////////////////
