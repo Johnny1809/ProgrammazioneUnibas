@@ -8,6 +8,7 @@ import android.util.Log;
 import it.unibas.corrieri.controllo.ControlloDettagliCorriere;
 import it.unibas.corrieri.controllo.ControlloNuovoPacco;
 import it.unibas.corrieri.controllo.ControlloPrincipale;
+import it.unibas.corrieri.controllo.ControlloSelezionaUtente;
 import it.unibas.corrieri.modello.Modello;
 import it.unibas.corrieri.modello.ModelloPersistente;
 import it.unibas.corrieri.persistenza.DAOServerMock;
@@ -40,6 +41,7 @@ public class Applicazione extends Application {
     private ControlloPrincipale controlloPrincipale = new ControlloPrincipale();
     private ControlloDettagliCorriere controlloDettagliCorriere = new ControlloDettagliCorriere();
     private ControlloNuovoPacco controlloNuovoPacco = new ControlloNuovoPacco();
+    private ControlloSelezionaUtente controlloSelezionaUtente = new ControlloSelezionaUtente();
 
 
     public Activity getCurrentActivity() {
@@ -68,6 +70,10 @@ public class Applicazione extends Application {
 
     public ControlloNuovoPacco getControlloNuovoPacco() {
         return controlloNuovoPacco;
+    }
+
+    public ControlloSelezionaUtente getControlloSelezionaUtente() {
+        return controlloSelezionaUtente;
     }
 
     //////////////////////////////////////////////

@@ -1,6 +1,7 @@
 package it.unibas.corrieri.vista;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import it.unibas.corrieri.modello.Utente;
 
 public class AdapterUtenti extends BaseAdapter {
 
+    private static final String TAG = AdapterUtenti.class.getSimpleName();
     private List<Utente> listaUtenti;
 
     public AdapterUtenti(List<Utente> listaUtenti) {
@@ -24,6 +26,7 @@ public class AdapterUtenti extends BaseAdapter {
 
     @Override
     public int getCount() {
+        Log.d(TAG, "getCount: La size della lista è " + listaUtenti.size());
         return listaUtenti.size();
     }
 

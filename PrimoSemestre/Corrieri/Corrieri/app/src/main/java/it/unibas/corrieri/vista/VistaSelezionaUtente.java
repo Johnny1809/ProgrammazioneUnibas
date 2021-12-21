@@ -22,6 +22,7 @@ public class VistaSelezionaUtente extends Fragment {
         View vista = inflater.inflate(R.layout.vista_seleziona_utente, container, false);
         ListView listaUtenti = vista.findViewById(R.id.listaUtenti);
         listaUtenti.setAdapter(new AdapterUtenti(Applicazione.getInstance().getDaoServer().findAllUtenti()));
+        listaUtenti.setOnItemClickListener(Applicazione.getInstance().getControlloSelezionaUtente().getAzioneUtenteSelezionato());
         return vista;
     }
 }
