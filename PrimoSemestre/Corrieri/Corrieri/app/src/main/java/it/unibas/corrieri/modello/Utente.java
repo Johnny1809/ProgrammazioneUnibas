@@ -59,7 +59,7 @@ public class Utente {
         this.pacchiInviati = pacchiInviati;
     }
 
-    public Pacco cercaPaccoInviato(Utente mittente, Calendar dataInvio) {
+    public Pacco cercaPaccoInviatoEntro15ggPrima(Utente mittente, Calendar dataInvio) {
         Calendar data15gPrima = (Calendar) dataInvio.clone();
         data15gPrima.add(Calendar.DAY_OF_MONTH, -15);
         for (Pacco pacco : pacchiInviati) {

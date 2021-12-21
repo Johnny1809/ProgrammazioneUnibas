@@ -10,12 +10,14 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import java.util.Date;
+
 import it.unibas.corrieri.Applicazione;
+import it.unibas.corrieri.Costanti;
 import it.unibas.corrieri.R;
+import it.unibas.corrieri.modello.Utente;
 
 public class VistaNuovoPacco extends Fragment {
 
@@ -32,8 +34,8 @@ public class VistaNuovoPacco extends Fragment {
         return calendarioDataPacco;
     }
 
-    public CheckBox getCheckBoxUrgente() {
-        return checkBoxUrgente;
+    public boolean getCheckBoxUrgente() {
+        return checkBoxUrgente.isChecked();
     }
 
     public TextView getTextViewMittenteSelezionato() {
@@ -52,8 +54,8 @@ public class VistaNuovoPacco extends Fragment {
         return bottoneAggiungiDestinatario;
     }
 
-    public EditText getEditTextPeso() {
-        return editTextPeso;
+    public String getEditTextPeso() {
+        return editTextPeso.getText().toString();
     }
 
     public Button getBottoneSalvaPacco() {
@@ -73,8 +75,28 @@ public class VistaNuovoPacco extends Fragment {
         editTextPeso = vista.findViewById(R.id.editTextPeso);
         bottoneSalvaPacco =  vista.findViewById(R.id.bottoneSalvaPacco);
 
+        calendarioDataPacco.setOnDateChangeListener(Applicazione.getInstance().getControlloNuovoPacco().getAzioneSelezionaData());
         bottoneAggiungiMittente.setOnClickListener(Applicazione.getInstance().getControlloNuovoPacco().getAzioneAggiungiMittente());
-        
+        bottoneAggiungiDestinatario.setOnClickListener(Applicazione.getInstance().getControlloNuovoPacco().getAzioneAggiungiDestinatario());
+        bottoneSalvaPacco.setOnClickListener(Applicazione.getInstance().getControlloNuovoPacco().getAzioneNuovoPacco());
+
         return vista;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Utente mittenteSelezionato = (Utente) Applicazione.getInstance().getModello().getBean(Costanti.MITTENTE_SELEZIONATO);
+        Utente destinatarioSelezionato = (Utente) Applicazione.getInstance().getModello().getBean(Costanti.DESTINATARIO_SELEZIONATO);
+        if (mittenteSelezionato != null) {
+            textViewMittenteSelezionato.setText(mittenteSelezionato.getNome());
+        } else {
+            textViewMittenteSelezionato.setText("Nessun Mittente Selezionato");
+        }
+        if (destinatarioSelezionato != null) {
+            textViewDestinatarioSelezionato.setText(destinatarioSelezionato.getNome());
+        } else {
+            textViewDestinatarioSelezionato.setText("Nessun Destinatario Selezionato");
+        }
     }
 }

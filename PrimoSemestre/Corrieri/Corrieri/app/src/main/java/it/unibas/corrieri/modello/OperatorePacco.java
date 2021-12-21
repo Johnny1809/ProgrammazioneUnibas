@@ -1,7 +1,5 @@
 package it.unibas.corrieri.modello;
 
-import android.util.Log;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -12,7 +10,7 @@ public class OperatorePacco {
     public boolean verificaResoValido(Utente destinatario, Utente mittente, Calendar dataInvio, double pesoDaVerificare) {
         //se il pacco è un reso e non è valido, ritorna false;
         boolean resoValido = true;
-        Pacco pacco = destinatario.cercaPaccoInviato(mittente, dataInvio);
+        Pacco pacco = destinatario.cercaPaccoInviatoEntro15ggPrima(mittente, dataInvio);
         if (pacco != null && (pacco.getPeso()) != pesoDaVerificare) {
             resoValido = false;
         }
