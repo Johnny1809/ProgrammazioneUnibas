@@ -1,1 +1,0 @@
-Cartella contenente il codice dei test
