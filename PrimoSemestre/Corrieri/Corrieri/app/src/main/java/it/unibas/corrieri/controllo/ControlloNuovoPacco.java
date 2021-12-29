@@ -15,6 +15,7 @@ import it.unibas.corrieri.Costanti;
 import it.unibas.corrieri.activity.ActivityNuovoPacco;
 import it.unibas.corrieri.modello.Corriere;
 import it.unibas.corrieri.modello.OperatorePacco;
+import it.unibas.corrieri.modello.Pacco;
 import it.unibas.corrieri.modello.Utente;
 import it.unibas.corrieri.vista.VistaNuovoPacco;
 
@@ -73,15 +74,14 @@ public class ControlloNuovoPacco {
             Utente destinatario = (Utente) Applicazione.getInstance().getModello().getBean(Costanti.DESTINATARIO_SELEZIONATO);
             String errori = convalida(dataInvio, peso, urgente, mittente, destinatario);
             if (!errori.isEmpty()) {
-                //TODO: testare ancora
                 activityNuovoPacco.mostraMessaggioErrore(errori);
                 return;
             }
-            //effettua la convalida dei dati
-            //crea pacco
-            //aggiungi il pacco al corriere
-            //aggiorna la vista
-            //torna all'acitvity precedente
+            Pacco pacco = new Pacco(dataInvio, Double.parseDouble(peso), urgente, mittente, destinatario);
+            corriereSelezionato.aggiungiPacco(pacco);
+            mittente.aggiungiPaccoInviato(pacco);
+            Applicazione.getInstance().getDaoServer().salvaPacco(pacco);
+            activityNuovoPacco.finish();
         }
 
         private String convalida(Calendar dataInvio, String peso, boolean urgente, Utente mittente, Utente destinatario) {
@@ -90,8 +90,9 @@ public class ControlloNuovoPacco {
             boolean dataValida = true;
             if (dataInvio == null) {
                 errori.append("Prima devi selezionare una data");
+                dataValida = false;
             } else if (urgente == true && !operatorePacco.verificaDataPaccoUrgente(dataInvio)) {
-                errori.append("Data non valida\n");
+                errori.append("Data non valida, il pacco è urgente\n");
                 dataValida = false;
             }
             if (mittente == null) {
@@ -107,7 +108,7 @@ public class ControlloNuovoPacco {
                 errori.append("Mittente e destinatario devono essere persone diverse\n");
             }
             if (mittente != null && destinatario != null  && !peso.trim().isEmpty() && dataValida &&
-                    operatorePacco.verificaResoValido(destinatario, mittente, dataInvio, Double.parseDouble(peso))) {
+                    !operatorePacco.verificaResoValido(destinatario, mittente, dataInvio, Double.parseDouble(peso))) {
                 errori.append("Il pacco è un reso, ed il suo peso non è valido\n");
             }
             return errori.toString().trim();

@@ -8,7 +8,7 @@ public class OperatorePacco {
     private String TAG = OperatorePacco.class.getSimpleName();
 
     public boolean verificaResoValido(Utente destinatario, Utente mittente, Calendar dataInvio, double pesoDaVerificare) {
-        //se il pacco è un reso e non è valido, ritorna false;
+        //se il pacco è un reso ed è valido, ritorna true
         boolean resoValido = true;
         Pacco pacco = destinatario.cercaPaccoInviatoEntro15ggPrima(mittente, dataInvio);
         if (pacco != null && (pacco.getPeso()) != pesoDaVerificare) {
