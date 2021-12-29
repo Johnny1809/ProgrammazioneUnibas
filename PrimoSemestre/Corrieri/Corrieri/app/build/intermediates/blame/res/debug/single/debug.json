@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_nuovo_pacco.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\vista_nuovo_pacco.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_nuovo_pacco.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\activity_nuovo_pacco.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\color_bottone.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\color\\bottone.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dettagli_corriere.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\activity_dettagli_corriere.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_dettaglio_corriere.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\vista_dettaglio_corriere.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_seleziona_utente.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\activity_seleziona_utente.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_riga_corriere.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\riga_corriere.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_riga_pacco.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\riga_pacco.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_seleziona_utente.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\vista_seleziona_utente.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_riga_utente.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\riga_utente.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_principale.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\vista_principale.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_principale.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\layout\\activity_principale.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Corrieri\\Corrieri\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    }
+]

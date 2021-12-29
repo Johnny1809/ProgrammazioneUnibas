@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.unibas.corrieri.test.TestOperatorePacco" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-12-16T10:14:02" hostname="LAPTOP-99B51EFO" time="0.007">
+  <properties/>
+  <testcase name="testVerificaPacchoUrgenteSbagliato" classname="it.unibas.corrieri.test.TestOperatorePacco" time="0.004"/>
+  <testcase name="testVerificaResoCorretto" classname="it.unibas.corrieri.test.TestOperatorePacco" time="0.001"/>
+  <testcase name="testVerificaResoSbagliato" classname="it.unibas.corrieri.test.TestOperatorePacco" time="0.001"/>
+  <testcase name="testVerificaPaccoUrgenteCorretto" classname="it.unibas.corrieri.test.TestOperatorePacco" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
