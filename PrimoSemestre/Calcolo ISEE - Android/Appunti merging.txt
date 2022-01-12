@@ -1,0 +1,9 @@
+Versione ufficiale del progetto
+Questo branch e' stato ottenuto non da un fork di develop_isee come sarebbe dovuto essere, 
+in quanto il fatto che in quel branchci stiano dei ruderi del progetto Corrieri rendeva complicato il mergind di develop-isee con main
+
+Per ovviare, 
+- è stato creato questo branch a partire dal main, 
+- è stato copiaeincollato il codice di isee dopo averlo scaricato come zip da develop_isee e averlo ripulito dei ruderi del progetto corrieriù
+
+Adesso dovrebbe essere possibile fare il marging sul branch main
