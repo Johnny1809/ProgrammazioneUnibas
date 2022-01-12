@@ -1,0 +1,4 @@
+#Wed Jan 12 18:25:56 CET 2022
+base.0=C\:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Calcolo ISEE - Android\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
