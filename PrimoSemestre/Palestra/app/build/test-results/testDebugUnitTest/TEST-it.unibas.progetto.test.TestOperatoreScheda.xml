@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.unibas.progetto.test.TestOperatoreScheda" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-25T16:27:24" hostname="LAPTOP-99B51EFO" time="0.004">
+  <properties/>
+  <testcase name="testScheda1" classname="it.unibas.progetto.test.TestOperatoreScheda" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <fragment android:name="it.unibas.progetto.vista.VistaPrincipale"
+    <fragment android:name="it.unibas.palestra.vista.VistaPrincipale"
               android:id="@+id/vistaPrincipale"
               android:layout_width="match_parent"
               android:layout_height="match_parent" />
