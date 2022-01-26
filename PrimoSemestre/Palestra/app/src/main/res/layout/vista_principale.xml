@@ -34,6 +34,15 @@
             android:layout_height="wrap_content"
             android:text="Cerca" />
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center|center_vertical"
+            android:text="Lista Schede"
+            android:textStyle="bold" />
+
         <ListView
             android:id="@+id/listaSchede"
             android:layout_width="match_parent"

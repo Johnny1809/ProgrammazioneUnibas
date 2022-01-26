@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="it.unibas.palestra.activity.ActivityAggiungiEsercizio"
+            android:name="it.unibas.palestra.activity.ActivityNuovoEsercizio"
             android:label="@string/app_name" >
         </activity>
     </application>

@@ -35,6 +35,7 @@ public class VistaPrincipale extends Fragment {
         listaSchede = vista.findViewById(R.id.listaSchede);
 
         bottoneCerca.setOnClickListener(Applicazione.getInstance().getControlloPrincipale().getAzioneCercaSchede());
+        listaSchede.setOnItemClickListener(Applicazione.getInstance().getControlloPrincipale().getAzioneSelezionaSchede());
 
         return vista;
     }
