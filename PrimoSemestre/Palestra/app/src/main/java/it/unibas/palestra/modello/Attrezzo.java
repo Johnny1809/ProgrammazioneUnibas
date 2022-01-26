@@ -33,6 +33,10 @@ public class Attrezzo {
         return esercizi;
     }
 
+    public void addEsercizioACuiAppartiene(Esercizio e) {
+        this.esercizi.add(e);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class Scheda {
+public class Scheda implements Comparable<Scheda>{
 
     private String codiceFiscale;
     private String nome;
@@ -62,5 +62,10 @@ public class Scheda {
 
     public void aggiungiEsercizio(Esercizio e) {
         this.esercizi.add(e);
+    }
+
+    @Override
+    public int compareTo(Scheda o) {
+        return dataInizio.compareTo(o.dataInizio);
     }
 }

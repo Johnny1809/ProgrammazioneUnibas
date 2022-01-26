@@ -20,8 +20,20 @@
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\src\\main\\res\\color\\bottone.xml"
     },
     {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\layout_riga_tabella_schede.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\src\\main\\res\\layout\\riga_tabella_schede.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_aggiungi_esercizio.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\src\\main\\res\\layout\\activity_aggiungi_esercizio.xml"
+    },
+    {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_aggiungi_esercizio.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\src\\main\\res\\layout\\vista_aggiungi_esercizio.xml"
     },
     {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",

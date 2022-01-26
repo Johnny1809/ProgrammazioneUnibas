@@ -5,8 +5,12 @@ import android.app.Application;
 import android.os.Bundle;
 import android.util.Log;
 
+import it.unibas.palestra.controllo.ControlloPrincipale;
 import it.unibas.palestra.modello.Modello;
 import it.unibas.palestra.modello.ModelloPersistente;
+import it.unibas.palestra.persistenza.DAOServerMock;
+import it.unibas.palestra.persistenza.IDAOServer;
+import it.unibas.palestra.vista.VistaPrincipale;
 
 public class Applicazione extends Application {
 
@@ -31,6 +35,8 @@ public class Applicazione extends Application {
 
     private Modello modello = new Modello();
     private ModelloPersistente modelloPersistente = new ModelloPersistente();
+    private IDAOServer daoServer = new DAOServerMock();
+    private ControlloPrincipale controlloPrincipale = new ControlloPrincipale();
 
     public Activity getCurrentActivity() {
         return this.currentActivity;
@@ -42,6 +48,14 @@ public class Applicazione extends Application {
 
     public ModelloPersistente getModelloPersistente() {
         return modelloPersistente;
+    }
+
+    public IDAOServer getDaoServer() {
+        return daoServer;
+    }
+
+    public ControlloPrincipale getControlloPrincipale() {
+        return controlloPrincipale;
     }
 
     //////////////////////////////////////////////
