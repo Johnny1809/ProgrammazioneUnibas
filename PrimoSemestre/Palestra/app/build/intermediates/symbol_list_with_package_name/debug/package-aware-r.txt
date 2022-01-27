@@ -1003,6 +1003,7 @@ id beginning
 id blocking
 id bottom
 id bottoneCerca
+id bottoneNuovoEsercizio
 id buttonPanel
 id campoDifficolta
 id center
@@ -1014,7 +1015,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id container
-id containerVistaAggiungiEsercizio
+id containerVistaNuovoEsercizio
 id containerVistaPrincipale
 id content
 id contentPanel
@@ -1053,11 +1054,14 @@ id image
 id info
 id italic
 id item_touch_helper_previous_elevation
+id labelAttrezzo
 id labelCodiceFiscale
 id labelDataFine
 id labelDataInizio
 id labelDifficolta
 id labelNome
+id labelPeso
+id labelRipetizioni
 id labeled
 id largeLabel
 id left
@@ -1141,6 +1145,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView2
+id textView3
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1163,7 +1169,7 @@ id up
 id useLogo
 id view_offset_helper
 id visible
-id vistaAggiungiEsercizio
+id vistaNuovoEsercizio
 id vistaPrincipale
 id withText
 id wrap_content
@@ -1214,7 +1220,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_aggiungi_esercizio
+layout activity_nuovo_esercizio
 layout activity_principale
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1238,12 +1244,13 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout riga_tabella_esercizi
 layout riga_tabella_schede
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-layout vista_aggiungi_esercizio
+layout vista_nuovo_esercizio
 layout vista_principale
 mipmap ic_launcher
 string abc_action_bar_home_description
