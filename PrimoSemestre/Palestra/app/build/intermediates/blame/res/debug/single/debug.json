@@ -1,11 +1,19 @@
 [
     {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_principale.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\src\\main\\res\\menu\\menu_principale.xml"
+    },
+    {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\color_bottone.xml.flat",
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\src\\main\\res\\color\\bottone.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_genera_scheda.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\src\\main\\res\\layout\\vista_genera_scheda.xml"
     },
     {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\layout_riga_tabella_attrezzi.xml.flat",
@@ -42,6 +50,10 @@
     {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_genera_scheda.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\src\\main\\res\\layout\\activity_genera_scheda.xml"
     },
     {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Palestra\\app\\build\\intermediates\\res\\merged\\debug\\layout_riga_tabella_schede.xml.flat",
