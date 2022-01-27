@@ -23,4 +23,8 @@ public class Esercizio {
     public int getRipetizioni() {
         return ripetizioni;
     }
+
+    public void setRipetizioni(int ripetizioni) {
+        this.ripetizioni = ripetizioni;
+    }
 }

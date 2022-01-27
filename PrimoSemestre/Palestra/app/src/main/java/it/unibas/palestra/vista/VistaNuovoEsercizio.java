@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -16,6 +17,7 @@ import java.util.List;
 import it.unibas.palestra.Applicazione;
 import it.unibas.palestra.Costanti;
 import it.unibas.palestra.R;
+import it.unibas.palestra.modello.Attrezzo;
 import it.unibas.palestra.modello.Esercizio;
 import it.unibas.palestra.modello.Scheda;
 
@@ -26,8 +28,12 @@ public class VistaNuovoEsercizio extends Fragment {
     TextView labelDifficolta;
     TextView labelDataInizio;
     TextView labelDataFine;
+    TextView labelAttrezzoSelezionato;
+    EditText campoPeso;
+    EditText campoRipetizioni;
     ListView listaEsercizi;
     Button bottoneNuovoEsercizio;
+    Button bottoneSelezionaAttrezzo;
 
     private final String TAG = VistaNuovoEsercizio.class.getSimpleName();
 
@@ -41,19 +47,16 @@ public class VistaNuovoEsercizio extends Fragment {
         labelDifficolta = vista.findViewById(R.id.labelDifficolta);
         labelDataInizio = vista.findViewById(R.id.labelDataInizio);
         labelDataFine = vista.findViewById(R.id.labelDataFine);
-        listaEsercizi = vista.findViewById(R.id.listaEsercizi);
+        labelAttrezzoSelezionato = vista.findViewById(R.id.labelAttrezzoSelezionato);
+        listaEsercizi = vista.findViewById(R.id.listViewAttrezzi);
+        campoPeso = vista.findViewById(R.id.campoPeso);
+        campoRipetizioni = vista.findViewById(R.id.campoRipetizioni);
         bottoneNuovoEsercizio = vista.findViewById(R.id.bottoneNuovoEsercizio);
+        bottoneSelezionaAttrezzo = vista.findViewById(R.id.bottoneSelezionaAttrezzo);
         Log.d(TAG,"---------------findViewById vari terminati-----------------------");
 
-
-        Scheda schedaSelezionata = (Scheda) Applicazione.getInstance().getModello().getBean(Costanti.SCHEDA_SELEZIONATA);
-        labelNome.setText(schedaSelezionata.getNome());
-        labelCodiceFiscale.setText(schedaSelezionata.getCodiceFiscale());
-        labelDifficolta.setText(schedaSelezionata.getDifficolta() + "");
-        Log.d(TAG,"--------------- BREAKPOINT VELOCE -----------------------");
-        labelDataInizio.setText(schedaSelezionata.getStringaDataInizio());
-        labelDataFine.setText(schedaSelezionata.getStringaDataFine());
-        Log.d(TAG,"---------------onCreateView di VNEsercizio terminato-----------------------");
+        bottoneSelezionaAttrezzo.setOnClickListener(Applicazione.getInstance().getControlloNuovoEsercizio().getAzioneSelezionaAttrezzo());
+        bottoneNuovoEsercizio.setOnClickListener(Applicazione.getInstance().getControlloNuovoEsercizio().getAzioneNuovoEsercizio());
 
         return vista;
     }
@@ -61,6 +64,41 @@ public class VistaNuovoEsercizio extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+
+        Scheda schedaSelezionata = (Scheda) Applicazione.getInstance().getModello().getBean(Costanti.SCHEDA_SELEZIONATA);
+        labelNome.setText(schedaSelezionata.getNome());
+        labelCodiceFiscale.setText(schedaSelezionata.getCodiceFiscale());
+        labelDifficolta.setText(schedaSelezionata.getDifficolta() + "");
+        labelDataInizio.setText(schedaSelezionata.getStringaDataInizio());
+        labelDataFine.setText(schedaSelezionata.getStringaDataFine());
+        Log.d(TAG,"---------------onCreateView di VNEsercizio terminato-----------------------");
+
+        Attrezzo attrezzoSelezionato = (Attrezzo) Applicazione.getInstance().getModello().getBean(Costanti.ATTREZZO_SELEZIONATO);
+        if (attrezzoSelezionato != null) {
+            labelAttrezzoSelezionato.setText(attrezzoSelezionato.getDescrizione());
+        } else labelAttrezzoSelezionato.setText("Seleziona Un Attrezzo");
+
+        this.aggiornaListaEsercizi();
+
+    }
+
+    public String getPeso() {
+        return campoPeso.getText().toString();
+    }
+
+    public String getRipetizioni() {
+        return campoRipetizioni.getText().toString();
+    }
+
+    public void setErrorePeso(String errore) {
+        campoPeso.setError(errore);
+    }
+
+    public void setErroreRipetizini(String errore) {
+        campoRipetizioni.setError(errore);
+    }
+
+    public void aggiornaListaEsercizi() {
         Scheda schedaSelezionata = (Scheda) Applicazione.getInstance().getModello().getBean(Costanti.SCHEDA_SELEZIONATA);
         List<Esercizio> listaEsercizi = schedaSelezionata.getEsercizi();
         AdapterListaEsercizi adapterListaEsercizi = new AdapterListaEsercizi(listaEsercizi);

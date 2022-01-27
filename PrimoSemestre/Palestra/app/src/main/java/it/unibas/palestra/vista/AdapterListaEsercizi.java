@@ -12,7 +12,6 @@ import java.util.List;
 import it.unibas.palestra.Applicazione;
 import it.unibas.palestra.R;
 import it.unibas.palestra.modello.Esercizio;
-import it.unibas.palestra.modello.Scheda;
 
 public class AdapterListaEsercizi extends BaseAdapter {
 
@@ -47,9 +46,9 @@ public class AdapterListaEsercizi extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) Applicazione.getInstance().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             vista = inflater.inflate(R.layout.riga_tabella_esercizi, parent, false);
         }
-        TextView labelAttrezzo = vista.findViewById(R.id.labelAttrezzo);
-        TextView labelPeso = vista.findViewById(R.id.labelPeso);
-        TextView labelRipetizioni = vista.findViewById(R.id.labelRipetizioni);
+        TextView labelAttrezzo = vista.findViewById(R.id.labelCodice);
+        TextView labelPeso = vista.findViewById(R.id.labelDescrizione);
+        TextView labelRipetizioni = vista.findViewById(R.id.labelParteDelCorpo);
         labelAttrezzo.setText(esercizio.getAttrezzo().getDescrizione());
         labelPeso.setText(esercizio.getPeso() + "");
         labelRipetizioni.setText(esercizio.getRipetizioni() + "");

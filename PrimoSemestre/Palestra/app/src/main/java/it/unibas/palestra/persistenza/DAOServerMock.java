@@ -12,10 +12,11 @@ import it.unibas.palestra.modello.Scheda;
 public class DAOServerMock implements IDAOServer {
 
     private List<Scheda> listaSchede;
+    private List<Attrezzo> listaAttrezzi;
 
     public DAOServerMock() {
         listaSchede = new ArrayList<>();
-
+        listaAttrezzi = new ArrayList<>();
         Scheda scheda1 = new Scheda("AAAA", "Alessandro", 1, new GregorianCalendar(2022, 0,26),
                 new GregorianCalendar(2022, 1,26));
         Scheda scheda2 = new Scheda("BBBB", "Bartolomeo", 2, new GregorianCalendar(2022, 0, 19),
@@ -26,6 +27,10 @@ public class DAOServerMock implements IDAOServer {
         Attrezzo a1 = new Attrezzo("CP1", "Chest Press", "Petto");
         Attrezzo a2 = new Attrezzo("LP1", "Leg Press", "Gambe");
         Attrezzo a3 = new Attrezzo("LM", "Lat Machine", "Dorso");
+
+        listaAttrezzi.add(a1);
+        listaAttrezzi.add(a2);
+        listaAttrezzi.add(a3);
 
         Esercizio ecp1 = new Esercizio(a1, 30,20);
         Esercizio ecp2 = new Esercizio(a1, 50,50);
@@ -79,6 +84,12 @@ public class DAOServerMock implements IDAOServer {
         }
         return risultato;
     }
+
+    @Override
+    public List<Attrezzo> findAllAttrezzi() {
+        return this.listaAttrezzi;
+    }
+
 
     @Override
     public void updateListaSchede(List<Scheda> listaSchede) {

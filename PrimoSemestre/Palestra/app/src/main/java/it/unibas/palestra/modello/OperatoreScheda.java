@@ -65,4 +65,19 @@ public class OperatoreScheda {
         return dataFine;
     }
 
+    public boolean esercizioGiaPresente(Esercizio nuovoEsercizio, Scheda scheda) {
+        Esercizio esercizioPresente = null;
+        for (Esercizio esercizioScansioanto : scheda.getEsercizi()) {
+            if (nuovoEsercizio.getAttrezzo().getCodice().trim().equalsIgnoreCase(esercizioScansioanto.getAttrezzo().getCodice().trim()) &&
+                    nuovoEsercizio.getPeso() == esercizioScansioanto.getPeso()) {
+                esercizioPresente = esercizioScansioanto;
+            }
+        }
+        if (esercizioPresente != null) {
+            esercizioPresente.setRipetizioni(nuovoEsercizio.getRipetizioni());
+            return true;
+        }
+        return false;
+    }
+
 }

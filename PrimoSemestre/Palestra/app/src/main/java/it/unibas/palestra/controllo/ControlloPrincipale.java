@@ -37,6 +37,7 @@ public class ControlloPrincipale {
             Scheda schedaSelezionata = listaSchede.get(position);
             Applicazione.getInstance().getModello().putBean(Costanti.SCHEDA_SELEZIONATA, schedaSelezionata);
             ActivityPrincipale activityPrincipale = (ActivityPrincipale) Applicazione.getInstance().getCurrentActivity();
+            Applicazione.getInstance().getModello().putBean(Costanti.ATTREZZO_SELEZIONATO, null);
             activityPrincipale.avviaActivityAggiungiEsercizio();
         }
     }
