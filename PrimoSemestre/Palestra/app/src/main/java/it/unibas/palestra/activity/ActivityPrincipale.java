@@ -22,7 +22,7 @@ public class ActivityPrincipale extends AppCompatActivity {
     }
 
     public void avviaActivityAggiungiEsercizio() {
-        Intent intent = new Intent(this, ActivityNuovoEsercizio.class);
+        Intent intent = new Intent(this, ActivityAggiungiEsercizio.class);
         startActivity(intent);
     }
 

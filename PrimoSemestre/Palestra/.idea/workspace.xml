@@ -82,7 +82,6 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="android-custom-viewC:/lib/AndroidSDK/sources/android-28/android/widget/ListView.java_SELECTED" value="ListView" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
   </component>
   <component name="RecentsManager">
@@ -94,9 +93,6 @@
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="it.unibas.palestra.persistenza" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="it.unibas.palestra.vista" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">

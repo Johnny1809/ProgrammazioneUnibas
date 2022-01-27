@@ -87,12 +87,12 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Palestra\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Palestra\app\src\main\AndroidManifest.xml:16:27-74
-activity#it.unibas.palestra.activity.ActivityNuovoEsercizio
+activity#it.unibas.palestra.activity.ActivityAggiungiEsercizio
 ADDED from C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Palestra\app\src\main\AndroidManifest.xml:19:9-22:20
 	android:label
 		ADDED from C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Palestra\app\src\main\AndroidManifest.xml:21:13-45
 	android:name
-		ADDED from C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Palestra\app\src\main\AndroidManifest.xml:20:13-60
+		ADDED from C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Palestra\app\src\main\AndroidManifest.xml:20:13-63
 uses-sdk
 INJECTED from C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Palestra\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\giova\Desktop\Programmazione\TerzoAnno\PrimoSemestre\Palestra\app\src\main\AndroidManifest.xml

@@ -1,6 +1,5 @@
 package it.unibas.palestra.modello;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -59,14 +58,6 @@ public class Scheda implements Comparable<Scheda>{
         long inizioMillis = dataInizio.getTimeInMillis();
         long fineMillis = dataFine.getTimeInMillis();
         return fineMillis - inizioMillis;
-    }
-
-    public String getStringaDataInizio() {
-        return DateFormat.getDateInstance(DateFormat.MEDIUM).format(this.dataInizio.getTime());
-    }
-
-    public String getStringaDataFine() {
-        return DateFormat.getDateInstance(DateFormat.MEDIUM).format(this.dataFine.getTime());
     }
 
     public void aggiungiEsercizio(Esercizio e) {

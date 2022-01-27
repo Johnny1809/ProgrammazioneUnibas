@@ -54,9 +54,9 @@ public class AdapterListaSchede extends BaseAdapter {
         TextView labelDataFine = vista.findViewById(R.id.labelDataFine);
         labelNome.setText(scheda.getNome());
         labelCodiceFiscale.setText(scheda.getCodiceFiscale());
-        String stringaDataInizio = scheda.getStringaDataInizio();
+        String stringaDataInizio = DateFormat.getDateInstance(DateFormat.MEDIUM).format(scheda.getDataInizio().getTime());
         labelDataInizio.setText(stringaDataInizio);
-        String stringaDataFine = scheda.getStringaDataFine();
+        String stringaDataFine = DateFormat.getDateInstance(DateFormat.MEDIUM).format(scheda.getDataFine().getTime());
         labelDataFine.setText(stringaDataFine);
         return vista;
     }

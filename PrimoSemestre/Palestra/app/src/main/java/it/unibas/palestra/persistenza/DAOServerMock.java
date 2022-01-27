@@ -80,10 +80,6 @@ public class DAOServerMock implements IDAOServer {
         return risultato;
     }
 
-    @Override
-    public void updateListaSchede(List<Scheda> listaSchede) {
-        //Essendo una versione mock, non ha senso sviluppare il seguente caso d'uso
-    }
 
 
 }

@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.ActivityNuovoEsercizio"
+            android:name=".activity.ActivityAggiungiEsercizio"
             android:label="@string/app_name" >
         </activity>
     </application>

@@ -19,12 +19,6 @@ public class ControlloPrincipale {
 
     private View.OnClickListener azioneCercaSchede = new AzioneCercaSchede();
 
-    public AdapterView.OnItemClickListener getAzioneSelezionaSchede() {
-        return azioneSelezionaSchede;
-    }
-
-    private AdapterView.OnItemClickListener azioneSelezionaSchede = new AzioneSelezionaScheda();
-
     public View.OnClickListener getAzioneCercaSchede() {
         return azioneCercaSchede;
     }
@@ -45,6 +39,7 @@ public class ControlloPrincipale {
 
         @Override
         public void onClick(View v) {
+            Applicazione applicazione = Applicazione.getInstance();
             IDAOServer daoServer = Applicazione.getInstance().getDaoServer();
             ActivityPrincipale activityCorrente = (ActivityPrincipale) Applicazione.getInstance().getCurrentActivity();
             VistaPrincipale vistaPrincipale = activityCorrente.getVistaPrincipale();
