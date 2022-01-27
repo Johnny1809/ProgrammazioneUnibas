@@ -10,7 +10,7 @@ import it.unibas.palestra.vista.VistaPrincipale;
 public class ActivityPrincipale extends AppCompatActivity {
 
     public static final String TAG = ActivityPrincipale.class.getSimpleName();
-
+    //TODO iniziare da qui a scrivere il menu?
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
