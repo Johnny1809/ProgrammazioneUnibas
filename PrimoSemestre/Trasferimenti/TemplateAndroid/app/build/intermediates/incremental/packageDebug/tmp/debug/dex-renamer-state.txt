@@ -1,0 +1,4 @@
+#Fri Jan 28 20:21:25 CET 2022
+base.0=C\:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
