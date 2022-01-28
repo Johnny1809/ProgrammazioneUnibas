@@ -1,9 +1,7 @@
 package it.unibas.palestra.controllo;
 
-import android.app.Activity;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ListView;
 
 import java.util.List;
 
@@ -33,7 +31,7 @@ public class ControlloPrincipale {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            List<Scheda> listaSchede = (List<Scheda>) Applicazione.getInstance().getModello().getBean(Costanti.LISTA_SCHEDE);
+            List<Scheda> listaSchede = (List<Scheda>) Applicazione.getInstance().getModello().getBean(Costanti.LISTA_SCHEDE_MOSTRATA);
             Scheda schedaSelezionata = listaSchede.get(position);
             Applicazione.getInstance().getModello().putBean(Costanti.SCHEDA_SELEZIONATA, schedaSelezionata);
             ActivityPrincipale activityPrincipale = (ActivityPrincipale) Applicazione.getInstance().getCurrentActivity();
@@ -52,7 +50,7 @@ public class ControlloPrincipale {
             int difficolta = Integer.parseInt(vistaPrincipale.getCampoDifficolta());
             List<Scheda> listaSchede = daoServer.findSchedaByDifficolta(difficolta);
             Modello modello = Applicazione.getInstance().getModello();
-            modello.putBean(Costanti.LISTA_SCHEDE, listaSchede);
+            modello.putBean(Costanti.LISTA_SCHEDE_MOSTRATA, listaSchede);
             vistaPrincipale.aggiornaListaSchede();
         }
     }

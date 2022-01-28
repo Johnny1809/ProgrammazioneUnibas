@@ -1,6 +1,5 @@
 package it.unibas.palestra.vista;
 
-import android.media.AsyncPlayer;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 
@@ -40,6 +39,12 @@ public class VistaPrincipale extends Fragment {
         return vista;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        this.aggiornaListaSchede();
+    }
+
     public String getCampoDifficolta() {
         return campoDifficolta.getText().toString();
     }
@@ -53,7 +58,8 @@ public class VistaPrincipale extends Fragment {
     }
 
     public void aggiornaListaSchede() {
-        List<Scheda> listaSchede = (List<Scheda>) Applicazione.getInstance().getModello().getBean(Costanti.LISTA_SCHEDE);
+        List<Scheda> listaSchede = (List<Scheda>) Applicazione.getInstance().getModello().getBean(Costanti.LISTA_SCHEDE_MOSTRATA);
+        if(listaSchede == null) return;
         Log.d(TAG, "-------La lista delle schede ha dimensione pari a:" + listaSchede.size());
         AdapterListaSchede adapterListaSchede = new AdapterListaSchede(listaSchede);
         this.listaSchede.setAdapter(adapterListaSchede);

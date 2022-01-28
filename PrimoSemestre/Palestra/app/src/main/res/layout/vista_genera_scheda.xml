@@ -20,12 +20,14 @@
             <TextView
                 android:id="@+id/textView8"
                 android:layout_height="wrap_content"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:text="Codice Fiscale:" />
 
             <EditText
                 android:id="@+id/campoCodiceFiscale"
                 android:layout_height="wrap_content"
+                android:layout_width="0dp"
                 android:layout_weight="4"
                 android:ems="10"
                 android:inputType="textPersonName" />
@@ -40,12 +42,14 @@
             <TextView
                 android:id="@+id/textView9"
                 android:layout_height="wrap_content"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:text="Nome:" />
 
             <EditText
                 android:id="@+id/campoNome"
                 android:layout_height="wrap_content"
+                android:layout_width="0dp"
                 android:layout_weight="4"
                 android:ems="10"
                 android:inputType="textPersonName" />
@@ -61,11 +65,13 @@
             <TextView
                 android:id="@+id/textView10"
                 android:layout_height="wrap_content"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:text="Difficoltà" />
 
             <EditText
                 android:id="@+id/campoDifficolta"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:ems="10"

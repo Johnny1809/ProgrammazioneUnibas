@@ -25,6 +25,7 @@ public class VistaGeneraScheda extends Fragment {
     EditText campoCodice;
     EditText campoNome;
     EditText campoDifficolta;
+    Button bottoneGeneraScheda;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -32,7 +33,25 @@ public class VistaGeneraScheda extends Fragment {
         campoCodice = vista.findViewById(R.id.campoCodiceFiscale);
         campoNome = vista.findViewById(R.id.campoNome);
         campoDifficolta = vista.findViewById(R.id.campoDifficolta);
+        bottoneGeneraScheda = vista.findViewById(R.id.bottoneGeneraScheda);
+        bottoneGeneraScheda.setOnClickListener(Applicazione.getInstance().getControlloGeneraScheda().getAzioneGeneraScheda());
         return vista;
+    }
+
+    public String getCodiceFiscale () {
+        return this.campoCodice.getText().toString();
+    }
+
+    public String getCampoNome() {
+        return this.campoNome.getText().toString();
+    }
+
+    public String getCampoDifficolta(){
+        return this.campoDifficolta.getText().toString();
+    }
+
+    public void setErroreCampoDifficolta(String messaggioErrore) {
+        this.campoDifficolta.setError(messaggioErrore);
     }
 
 }

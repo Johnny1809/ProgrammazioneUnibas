@@ -5,6 +5,7 @@ import android.app.Application;
 import android.os.Bundle;
 import android.util.Log;
 
+import it.unibas.palestra.controllo.ControlloGeneraScheda;
 import it.unibas.palestra.controllo.ControlloMenuPrincipale;
 import it.unibas.palestra.controllo.ControlloNuovoEsercizio;
 import it.unibas.palestra.controllo.ControlloPrincipale;
@@ -42,6 +43,12 @@ public class Applicazione extends Application {
     private ControlloPrincipale controlloPrincipale = new ControlloPrincipale();
     private ControlloNuovoEsercizio controlloNuovoEsercizio = new ControlloNuovoEsercizio();
     private ControlloMenuPrincipale controlloMenuPrincipale = new ControlloMenuPrincipale();
+
+    public ControlloGeneraScheda getControlloGeneraScheda() {
+        return controlloGeneraScheda;
+    }
+
+    private ControlloGeneraScheda controlloGeneraScheda = new ControlloGeneraScheda();
 
     public ControlloMenuPrincipale getControlloMenuPrincipale() {
         return controlloMenuPrincipale;

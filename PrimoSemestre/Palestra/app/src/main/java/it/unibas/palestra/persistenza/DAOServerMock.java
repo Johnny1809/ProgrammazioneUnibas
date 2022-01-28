@@ -90,10 +90,13 @@ public class DAOServerMock implements IDAOServer {
         return this.listaAttrezzi;
     }
 
+    @Override
+    public List<Scheda> findAllSchede() {return this.listaSchede;};
+
 
     @Override
-    public void updateListaSchede(List<Scheda> listaSchede) {
-        //Essendo una versione mock, non ha senso sviluppare il seguente caso d'uso
+    public void updateListaSchede(Scheda scheda) {
+        this.listaSchede.add(scheda);
     }
 
 
