@@ -8,6 +8,10 @@
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\layout\\riga_tabella_calciatori.xml"
     },
     {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_nuovo_trasferimento.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\layout\\activity_nuovo_trasferimento.xml"
+    },
+    {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dettagli_calciatore.xml.flat",
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\layout\\activity_dettagli_calciatore.xml"
     },
@@ -20,6 +24,10 @@
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_dettagli_calciatore.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\menu\\menu_dettagli_calciatore.xml"
+    },
+    {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
@@ -28,19 +36,31 @@
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_dettagli_calciatore.xml.flat",
-        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\layout\\vista_dettagli_calciatore.xml"
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_nuovo_trasferimento.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\layout\\vista_nuovo_trasferimento.xml"
     },
     {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_principale.xml.flat",
-        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\layout\\vista_principale.xml"
-    },
-    {
         "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_riga_tabella_trasferimenti.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\layout\\riga_tabella_trasferimenti.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_principale.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\menu\\menu_principale.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_dettagli_calciatore.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\layout\\vista_dettagli_calciatore.xml"
+    },
+    {
+        "merged": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_vista_principale.xml.flat",
+        "source": "C:\\Users\\giova\\Desktop\\Programmazione\\TerzoAnno\\PrimoSemestre\\Trasferimenti\\TemplateAndroid\\app\\src\\main\\res\\layout\\vista_principale.xml"
     }
 ]

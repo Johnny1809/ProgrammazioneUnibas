@@ -3,6 +3,8 @@ package it.unibas.trasferimenti.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,6 +30,18 @@ public class ActivityPrincipale extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         this.aggiornaDati();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_principale, menu);
+        MenuItem ordinaNome = menu.findItem(R.id.menuOrdinaNome);
+        MenuItem ordinaValCresc = menu.findItem(R.id.menuOrdinaValoreCresc);
+        MenuItem ordinaValDec = menu.findItem(R.id.menuOrdinaValoreDec);
+        ordinaNome.setOnMenuItemClickListener(Applicazione.getInstance().getControlloPrincipale().getAzioneOrdinaNome());
+        ordinaValDec.setOnMenuItemClickListener(Applicazione.getInstance().getControlloPrincipale().getAzioneOrdinaValDec());
+        ordinaValCresc.setOnMenuItemClickListener(Applicazione.getInstance().getControlloPrincipale().getAzioneOrdinaValCre());
+        return super.onCreateOptionsMenu(menu);
     }
 
     private void aggiornaDati() {

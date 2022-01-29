@@ -1,5 +1,7 @@
 package it.unibas.trasferimenti.modello;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Trasferimento {
@@ -30,5 +32,9 @@ public class Trasferimento {
 
     public int getCosto() {
         return costo;
+    }
+
+    public String getStringaData() {
+        return DateFormat.getDateInstance(DateFormat.MEDIUM).format(data.getTime());
     }
 }

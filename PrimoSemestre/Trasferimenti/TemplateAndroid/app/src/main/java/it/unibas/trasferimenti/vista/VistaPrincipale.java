@@ -40,7 +40,7 @@ public class VistaPrincipale extends Fragment {
     public void aggiornaDati() {
         List<Calciatore> listaCalciatori = (List<Calciatore>) Applicazione.getInstance().getModello().getBean(Costanti.LISTA_CALCIATORI);
         this.textViewNumeroCalciatori.setText("Sono Presenti " + listaCalciatori.size() + " Calciatori");
-        this.textViewCriterioOrdinamento.setText(Costanti.CRITERIO_ORDINAMENTO_NOME);
+        this.textViewCriterioOrdinamento.setText((String)Applicazione.getInstance().getModello().getBean(Costanti.ORDINAMENTO_SELEZIONATO));
         AdapterListaCalciatori adapterListaCalciatori = new AdapterListaCalciatori(listaCalciatori);
         listViewCalciatori.setAdapter(adapterListaCalciatori);
         adapterListaCalciatori.aggiornaDati();

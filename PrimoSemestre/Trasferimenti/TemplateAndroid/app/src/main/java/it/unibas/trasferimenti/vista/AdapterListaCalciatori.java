@@ -8,7 +8,6 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.util.List;
-import java.util.zip.Inflater;
 
 import it.unibas.trasferimenti.Applicazione;
 import it.unibas.trasferimenti.R;
@@ -50,8 +49,8 @@ public class AdapterListaCalciatori extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) Applicazione.getInstance().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             vista = inflater.inflate(R.layout.riga_tabella_calciatori, parent, false);
         }
-        TextView textViewNome = vista.findViewById(R.id.textViewNome);
-        TextView textViewRuolo = vista.findViewById(R.id.textViewRuolo);
+        TextView textViewNome = vista.findViewById(R.id.textViewSquadraA);
+        TextView textViewRuolo = vista.findViewById(R.id.textViewData);
         TextView textViewValore = vista.findViewById(R.id.textViewValore);
         Calciatore calciatore = calciatori.get(position);
         textViewNome.setText(calciatore.getNome());

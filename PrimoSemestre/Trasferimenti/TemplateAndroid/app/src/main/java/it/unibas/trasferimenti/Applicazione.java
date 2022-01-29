@@ -5,6 +5,8 @@ import android.app.Application;
 import android.os.Bundle;
 import android.util.Log;
 
+import it.unibas.trasferimenti.controllo.ControlloDettagliCalciatore;
+import it.unibas.trasferimenti.controllo.ControlloNuovoTrasferimento;
 import it.unibas.trasferimenti.controllo.ControlloPrincipale;
 import it.unibas.trasferimenti.modello.Modello;
 import it.unibas.trasferimenti.modello.ModelloPersistente;
@@ -36,6 +38,16 @@ public class Applicazione extends Application {
     private ModelloPersistente modelloPersistente = new ModelloPersistente();
     private IDAOServer daoServer = new DAOServerMock();
     private ControlloPrincipale controlloPrincipale = new ControlloPrincipale();
+    private ControlloDettagliCalciatore controlloDettagliCalciatore = new ControlloDettagliCalciatore();
+    private ControlloNuovoTrasferimento controlloNuovoTrasferimento = new ControlloNuovoTrasferimento();
+
+    public ControlloNuovoTrasferimento getControlloNuovoTrasferimento() {
+        return controlloNuovoTrasferimento;
+    }
+
+    public ControlloDettagliCalciatore getControlloDettagliCalciatore() {
+        return controlloDettagliCalciatore;
+    }
 
     public ControlloPrincipale getControlloPrincipale() {
         return controlloPrincipale;

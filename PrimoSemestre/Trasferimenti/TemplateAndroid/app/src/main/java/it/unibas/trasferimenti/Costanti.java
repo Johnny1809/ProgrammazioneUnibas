@@ -9,4 +9,5 @@ public class Costanti {
 
     public static final String CALCIATORE_SELEZIONATO = "Calciatore selezinato";
     public static final String LISTA_CALCIATORI = "Lista Calciatori";
+    public static final String DATA_SELEZIONATA_NUOVO_TRASFERIMENTO = "Data selezionata per il nuovo trasferimento";
 }

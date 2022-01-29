@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerVistaNuovoTrasferimento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment android:name="it.unibas.trasferimenti.vista.VistaNuovoTrasferimento"
+              android:id="@+id/vistaNuovoTrasferimento"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+
+</FrameLayout>
