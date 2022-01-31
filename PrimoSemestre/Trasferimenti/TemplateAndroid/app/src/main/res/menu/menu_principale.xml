@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Ordina: Nome" android:id="@+id/menuOrdinaNome"/>
+    <item android:title="Ordina: Valore Crescente" android:id="@+id/menuOrdinaValoreCresc"/>
+    <item android:title="Ordina: Valore Descrescente" android:id="@+id/menuOrdinaValoreDec"/>
+</menu>
