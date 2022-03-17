@@ -2,6 +2,7 @@ package it.unibas.aziende.persistenza;
 
 import it.unibas.aziende.modello.Azienda;
 import it.unibas.aziende.modello.Dipendente;
+import it.unibas.aziende.persistenza.DAOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -22,20 +23,20 @@ public class DAODipendenteJDBC implements IDAODipendente {
         try {
             connection = dataSource.getConnection();
             statement = connection.createStatement();
-            String query = "select * from dipendente where codice_fiscale = '" + codiceFiscale + "'";
-            logger.info(query);
+            String query = "select * from dipendente where codice_fiscale = '" + codiceFiscale +"'";
+            logger.debug(query);
             resultSet = statement.executeQuery(query);
             Dipendente dipendente = null;
-            if (resultSet.next()) {
+            if(resultSet.next()){
                 dipendente = new Dipendente();
                 dipendente.setCodiceFiscale(resultSet.getString("codice_fiscale"));
-                dipendente.setNome(resultSet.getString("nome"));
-                dipendente.setCognome(resultSet.getString("cognome"));
                 dipendente.setAnnoAssunzione(resultSet.getInt("anno_assunzione"));
+                dipendente.setCognome(resultSet.getString("cognome"));
+                dipendente.setNome(resultSet.getString("nome"));
             }
             return dipendente;
         } catch (SQLException ex) {
-            throw new DAOException("Non è stato possibile eseguire la query: " + ex.getMessage());
+            throw new DAOException("E' stato impossibile eseguire la query: " + ex.getMessage());
         } finally {
             dataSource.close(connection);
         }
@@ -48,17 +49,18 @@ public class DAODipendenteJDBC implements IDAODipendente {
         try {
             connection = dataSource.getConnection();
             statement = connection.createStatement();
-            StringBuilder query = new StringBuilder();
-            query.append("insert into dipendente (codice_fiscale,  nome, cognome, anno_assunzione, azienda) values (");
-            query.append("'").append(dipendente.getCodiceFiscale()).append("', ");
-            query.append("'").append(dipendente.getNome()).append("', ");
-            query.append("'").append(dipendente.getCognome()).append("', ");
-            query.append("").append(dipendente.getAnnoAssunzione()).append(", ");
-            query.append("'").append(azienda.getPartitaIVA()).append("' )");
-            logger.info(query.toString());
-            statement.executeUpdate(query.toString());
-        } catch (SQLException ex) {
-            throw new DAOException("Non è stato possibile eseguire la query: " + ex.getMessage());
+            StringBuilder sb =  new StringBuilder();
+            sb.append("insert into dipendente (codice_fiscale, nome, cognome, anno_assunzione, azienda) values (");
+            sb.append("'" + dipendente.getCodiceFiscale() +"', ");
+            sb.append("'" + dipendente.getNome()+"', ");
+            sb.append("'" + dipendente.getCognome()+"', ");
+            sb.append(dipendente.getAnnoAssunzione()+", ");
+            sb.append("'" + azienda.getPartitaIVA() + "')");
+            String query = sb.toString();
+            statement.execute(query);
+            logger.debug("Eseguita la query " +  query);
+        } catch (SQLException e) {
+            throw new DAOException("Non è stato possibile eseguire la query: " + e.getMessage());
         } finally {
             dataSource.close(connection);
         }
@@ -71,13 +73,11 @@ public class DAODipendenteJDBC implements IDAODipendente {
         try {
             connection = dataSource.getConnection();
             statement = connection.createStatement();
-            String query = "delete from dipendente where codice_fiscale = '"+ dipendente.getCodiceFiscale() + "'";
-            logger.info(query);
+            String query = "delete from dipendente where codice_fiscale = '" + dipendente.getCodiceFiscale() + "'";
+            logger.debug(query);
             statement.executeUpdate(query);
-        } catch (SQLException ex) {
-            throw new DAOException("Non è stato possibile eseguire la query: " + ex.getMessage());
-        } finally {
-            dataSource.close(connection);
+        } catch (SQLException e) {
+            throw new DAOException("Non è stato possibile eseguire la query: " + e.getMessage());
         }
     }
 

@@ -3,8 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/giova/Downloads/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/test/it/unibas/aziende/test/persistenza/DAOAziendaJDBCTest.java</file>
-            <file>file:/C:/Users/giova/Downloads/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/persistenza/DataSource.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/test/it/unibas/aziende/test/persistenza/DAOAziendaJDBCTest.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/Applicazione.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/vista/PannelloPrincipale.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/vista/Frame.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/vista/ModelloTabellaAziende.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/vista/ModelloTabellaDipendenti.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/Costanti.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/controllo/ControlloPrincipale.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/persistenza/DAODipendenteJDBC.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/persistenza/DAOAziendaJDBC.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/modello/Modello.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/2021-03-19%20-%20Dipendenti/Esercitazione%20Aziende%20JDBC/src/it/unibas/aziende/vista/FinestraDettagli.java</file>
         </group>
     </open-files>
 </project-private>
