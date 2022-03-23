@@ -1,5 +1,6 @@
 package it.unibas.aziende;
 
+import it.unibas.aziende.controllo.ControlloFinestraDettagli;
 import it.unibas.aziende.controllo.ControlloPrincipale;
 import it.unibas.aziende.modello.Modello;
 import it.unibas.aziende.persistenza.DAOAziendaJDBC;
@@ -30,6 +31,11 @@ public class Applicazione {
     private PannelloPrincipale pannelloPrincipale;
     private ControlloPrincipale controlloPrincipale;
     private FinestraDettagli finestraDettagli;
+    private ControlloFinestraDettagli controlloFinestraDettagli;
+
+    public ControlloFinestraDettagli getControlloFinestraDettagli() {
+        return controlloFinestraDettagli;
+    }
 
     public Modello getModello() {
         return modello;
@@ -67,6 +73,7 @@ public class Applicazione {
         pannelloPrincipale = new PannelloPrincipale();
         controlloPrincipale = new ControlloPrincipale();
         finestraDettagli = new FinestraDettagli(frame);
+        controlloFinestraDettagli = new ControlloFinestraDettagli();
         
         finestraDettagli.inizializza();
         pannelloPrincipale.inizializza();

@@ -243,8 +243,8 @@ public class FinestraDettagli extends javax.swing.JDialog {
     }
 
     private void inizializzaAzioni() {
-        //TODO this.bottoneEliminaDipendente.setAction(Applicazione.getInstance().getControlloFinestraDettagli().getAzioneEliminaDipendente());
-        //TODO this.bottoneAggiungiDipendente.setAction(Applicazione.getInstance().getControlloFinestraDettagli().getAzioneAggiungiDipendente());
+        this.bottoneEliminaDipendente.setAction(Applicazione.getInstance().getControlloFinestraDettagli().getAzioneEliminaDipendente());
+        this.bottoneAggiungiDipendente.setAction(Applicazione.getInstance().getControlloFinestraDettagli().getAzioneAggiungiDipendente());
     }
     
     public String getValoreCodiceFiscale () {
