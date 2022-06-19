@@ -1,5 +1,6 @@
-package it.unibas.persistenza;
+package it.unibas.persistenza.hibernate;
 
+import it.unibas.persistenza.DAOException;
 import it.unibas.persistenza.DAOException;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

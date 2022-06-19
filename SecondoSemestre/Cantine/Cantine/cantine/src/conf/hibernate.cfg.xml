@@ -6,7 +6,7 @@
     
     <session-factory>    
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql:NOME_PROGETTO</property>
+        <property name="hibernate.connection.url">jdbc:postgresql:cantine</property>
         <property name="hibernate.connection.username">pguser</property>
         <property name="hibernate.connection.password">pguser</property>
         
@@ -27,7 +27,9 @@
         <!-- <property name="hbm2ddl.auto">create</property> -->
 
         <!-- mapping -->
-        <mapping class="it.unibas.NOME_PROGETTO.modello.Utente" />
+        <mapping class="it.unibas.cantine.modello.Annata" />
+        <mapping class="it.unibas.cantine.modello.Vino" />
+        <mapping class="it.unibas.cantine.modello.Vitigno" />
 
     </session-factory>
     

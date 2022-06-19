@@ -1,5 +1,7 @@
-package it.unibas.persistenza;
+package it.unibas.persistenza.hibernate;
 
+import it.unibas.persistenza.DAOException;
+import it.unibas.persistenza.IDAOGenerico;
 import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
