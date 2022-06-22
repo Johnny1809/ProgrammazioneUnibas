@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/controllo/ControlloPannelloPrincipale.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/build.xml</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/Costanti.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/vista/ModelloTabellaRisposte.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/persistenza/DAOSondaggioHibernate.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/persistenza/IDAOAzienda.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/controllo/ControlloFinestraDettaglio.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/modello/Azienda.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/vista/VistaFrame.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/vista/ModelloTabellaSondaggi.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/varie/insert.sql</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/test/it/unibas/sondaggi/test/persistenza/DAOSondaggiHibernateTest.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/modello/Sondaggio.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/vista/FinestraDettagli.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/persistenza/IDAOSondaggio.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/modello/Modello.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/persistenza/DAOAziendaHibernate.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/Applicazione.java</file>
+            <file>file:/C:/Users/giova/Desktop/Programmazione/TerzoAnno/SecondoSemestre/Sondaggi/sondaggi/src/it/unibas/sondaggi/vista/PannelloPrincipale.java</file>
+        </group>
+    </open-files>
+</project-private>
